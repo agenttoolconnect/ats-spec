@@ -1,0 +1,16 @@
+{
+    "name": "Weather Query",
+    "description": "Query real-time weather information for a specified city",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "city": {
+                "type": "string",
+                "description": "City name"
+            }
+        },
+        "required": [
+            "city"
+        ]
+    }
+}

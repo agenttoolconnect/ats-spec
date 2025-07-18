@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://agenttoolconnect.com/ats/v1",
+    "title": "Agent Tool Specification v1",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "parameters": {
+            "$ref": "https://json-schema.org/draft/2020-12/schema"
+        },
+        "required": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "authenticationMethod": {
+            "type": "string"
+        },
+        "rateLimit": {
+            "type": "integer"
+        },
+        "healthCheck": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "parameters"
+    ]
+}

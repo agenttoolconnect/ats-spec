@@ -1,0 +1,3 @@
+- Always set `rateLimit` to protect downstream APIs.
+- Use `healthCheck` so agents can probe liveness.
+- Never hard-code secrets in ATS files.
